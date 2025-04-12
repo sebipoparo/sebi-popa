@@ -1,0 +1,223 @@
+# sebi-popa<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Site cu animații și design modern" />
+  <title>Site Ultra Complex cu Animații</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ff4f58;
+      color: white;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-weight: 600;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #444;
+      padding: 10px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-image: url('https://via.placeholder.com/1920x500');
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 50px;
+      font-weight: 600;
+      color: white;
+      animation: fadeInUp 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+      animation: fadeInUp 2s ease-in-out;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-weight: 300;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .btn-glow {
+      display: inline-block;
+      padding: 12px 28px;
+      font-size: 18px;
+      color: white;
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid white;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+      animation: fadeInUp 3s ease-in-out;
+    }
+
+    .btn-glow:hover {
+      background: white;
+      color: #ff4f58;
+      box-shadow: 0 0 20px white;
+      transform: scale(1.05);
+    }
+
+    /* WOW Autor Section */
+    .autor-wow {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(-45deg, #ff416c, #ff4f58, #ff6f61, #ff416c);
+      background-size: 600% 600%;
+      animation: bgFlow 10s ease infinite;
+      text-align: center;
+      color: white;
+      padding: 50px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    @keyframes bgFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .autor-content {
+      z-index: 2;
+      max-width: 800px;
+      padding: 20px;
+      animation: fadeInUp 1.5s ease forwards;
+      opacity: 0;
+    }
+
+    .autor-wow h2 {
+      font-size: 60px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+    }
+
+    .autor-wow p {
+      font-size: 22px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Site ul unui copil de 13 ani!</h1>
+    <p>Un site, unui copil de la scoala gimnaziala ,,Explorator Teodor Gheorghe Negoita,,Sascut</p>
+  </header>
+
+  <nav>
+    <a href="#home">Acasă</a>
+    <a href="#about">Despre</a>
+    <a href="#gallery">Galerie</a>
+    <a href="#contact">Contact</a>
+    <a href="#autor">Autor</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h1>Bun venit pe site-ul meu!</h1>
+  </section>
+
+  <section class="section" id="about">
+    <h2>Despre Mine</h2>
+    <p>Sunt un băiat pasionat de HTML și web design.</p>
+  </section>
+
+  <section class="section" id="gallery">
+    <h2>Galerie</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Design creativ">
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact</h2>
+    <p>Ma poți contacta la <a href="mailto:sebipopa12ro@gmail.com" style="color: white; text-decoration: underline;">sebipopa12ro@gmail.com</a>.</p>
+  </section>
+
+  <section class="autor-wow" id="autor">
+    <div class="autor-content">
+      <h2>Sebi</h2>
+      <p>Salut! Eu sunt <strong>Sebi</strong>, creatorul acestui site. Tot ce vezi aici – de la design, animații, cod și până la conținut – este realizat de mine, cu pasiune pentru web modern. 🚀</p>
+      <a href="#" class="btn-glow">N am CV am doar 7 ani de scoala normala(:</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 . Toate drepturile rezervate.</p>
+  </footer>
+</body>
+</html>
